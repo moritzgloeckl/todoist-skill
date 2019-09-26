@@ -1,0 +1,22 @@
+{
+   "skillMetadata":{
+      "sections":[
+         {
+            "name":"Connection",
+            "fields":[
+               {
+                  "name": "Authorize with Todoist",
+                  "type": "oauth",
+                  "value": 4
+               },
+               {
+                  "name":"ApiKey",
+                  "type":"text",
+                  "label":"Todoist API Key",
+                  "value":""
+               }
+            ]
+         }
+      ]
+   }
+}

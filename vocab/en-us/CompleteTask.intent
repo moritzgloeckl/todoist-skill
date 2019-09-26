@@ -1,0 +1,2 @@
+complete (task|) {task}
+mark (task|) {task} as complete
