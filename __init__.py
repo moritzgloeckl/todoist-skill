@@ -44,8 +44,7 @@ class MycroftTokenCredentials(client.AccessTokenCredentials):
 
 
 class TodoistSkill(MycroftSkill):
-    PROJECT_REGEX = "(the|my)(.*)(todo)"
-    TASK_REGEX = ""
+    PROJECT_REGEX = "(the|my)(.*)(todo|to do|to-do)"
 
     def __init__(self):
         MycroftSkill.__init__(self)
