@@ -1,1 +1,1 @@
-(add|put) {task} (due {datetime}|for {datetime}|) (on|to) (my|the) {project} (todos|todo list|todoist|to do list|to-do )
+(add|put) {task} (due {datetime}|for {datetime}|) (on|to) (my|the) {project} (todos|todo list|todoist|to do list|to-do list)
