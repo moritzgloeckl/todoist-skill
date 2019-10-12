@@ -57,7 +57,8 @@ class TodoistSkill(MycroftSkill):
         if token:
             self.todoist = TodoistWrapper(token)
         else:
-            self.speak_dialog("SetupFirst")
+            LOG.error("No API key")
+            #self.speak_dialog("SetupFirst")
 
     def _setup_oauth(self):
         try:
