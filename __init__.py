@@ -61,7 +61,7 @@ class TodoistSkill(MycroftSkill):
 
     def _setup_oauth(self):
         try:
-            self.credentials = MycroftTokenCredentials(4)
+            self.credentials = MycroftTokenCredentials(2093363369421583265)
             http = self.credentials.authorize(httplib2.Http())
             return http.request.credentials.access_token
         except HTTPError:
