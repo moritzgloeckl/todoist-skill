@@ -7,7 +7,7 @@
                {
                   "name": "Authorize with Todoist",
                   "type": "oauth",
-                  "value": 4
+                  "value": 9
                },
                {
                   "name":"ApiKey",
