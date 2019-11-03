@@ -15,8 +15,8 @@ To setup the skill you can either click on the Connect button in the skill setti
 @moritzgloeckl Moritz Glöckl
 
 ## Category
-Daily
 **Productivity**
+Daily
 
 ## Tags
 #todoist
