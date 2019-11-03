@@ -106,7 +106,7 @@ class TodoistSkill(MycroftSkill):
             self.speak_dialog('ErrorComplete', data={'task': message.data.get('task')})
 
     def _check_for_credentials(self):
-        if self.todoist is None:
+        if not hasattr(self, 'todoist'):
             self.speak_dialog('SetupFirst')
             return True
         else:
