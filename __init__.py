@@ -68,7 +68,7 @@ class TodoistSkill(MycroftSkill):
 
     @intent_handler(IntentBuilder("ReadTasksIntent").require("ReadTaskKeyword").require("TodoKeyword"))
     def handle_read_tasks_intent(self, message):
-        if self._check_for_credentials() return
+        if self._check_for_credentials(): return
 
         time = extract_datetime(message.data.get("utterance", ""))[0]
         project = self._extract_project(message.data.get("utterance", ""))
@@ -88,7 +88,7 @@ class TodoistSkill(MycroftSkill):
 
     @intent_file_handler('AddTask.intent')
     def handle_add_task_intent(self, message):
-        if self._check_for_credentials() return
+        if self._check_for_credentials(): return
         
         self.todoist.add_task(message.data.get('task'), message.data.get('datetime', 'today'),
                               message.data.get('project', ''))
@@ -98,7 +98,7 @@ class TodoistSkill(MycroftSkill):
 
     @intent_file_handler('CompleteTask.intent')
     def handle_complete_task_intent(self, message):
-        if self._check_for_credentials() return
+        if self._check_for_credentials(): return
     
         if self.todoist.complete_task(message.data.get('task')):
             self.speak_dialog('ConfirmComplete', data={'task': message.data.get('task')})
