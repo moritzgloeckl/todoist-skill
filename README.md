@@ -32,7 +32,7 @@ Daily
 ### Querying tasks
 * "What's on my todos for tomorrow"
 * "Is there anything on my todos today?"
-* "Read me my todoist for the 25th of December 2020"
+* "Read me my todo list for the 25th of December 2020"
 
 ### Marking tasks complete
 * "Mark task do this and that as complete"
